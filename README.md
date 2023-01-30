@@ -17,9 +17,9 @@ We use time series data classification as an example with a simple architecture.
 To run the code, please download PAMAP2 dataset as below and create persistence image via PI.ipynb.
 
 ## Dataset
- Dataset can be downloaded from:
+* Dataset can be downloaded from:
  http://archive.ics.uci.edu/ml/datasets/pamap2+physical+activity+monitoring
- Pamap2 preprocessing found in preprocessing_pamap2_2.py
+* Pamap2 preprocessing found in preprocessing_pamap2_2.py
 
 
 ## Sample
