@@ -14,7 +14,13 @@ Forthcoming.
 
 ## Time Series Data Classification
 We use time series data classification as an example with a simple architecture. In order to reproduce the results described on the paper, please modify the hyperparameters. The users can also change the data to other dataset at their interest.
-To run the code, please create persistence image via PI.ipynb.
+To run the code, please download PAMAP2 dataset as below and create persistence image via PI.ipynb.
+
+## Dataset
+ Dataset can be downloaded from:
+ http://archive.ics.uci.edu/ml/datasets/pamap2+physical+activity+monitoring
+ Pamap2 preprocessing found in preprocessing_pamap2_2.py
+
 
 ## Sample
 python3 train_ad.py --epochs 200 --teacher wrn163 --teacher-checkpoint Teaimg/wrn/wrn163_0_image.pth.tar --teacher2 wrn1631 --teacher-checkpoint2 Teasig/wrn/wrn163_0_signal.pth.tar --student wrn1611 --student-checkpoint Teasig/wrn/wrn161_0_signal.pth.tar --cuda 1 --dataset pamap --batch_size 64 --sbj 0 --trial 163m_161_099_id0_00_std --save_weight 0 --seed 1234
